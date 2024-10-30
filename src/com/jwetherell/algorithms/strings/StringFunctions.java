@@ -15,7 +15,8 @@ public class StringFunctions {
     public static final String reverseWithStringConcat(String string) {
         String output = new String();
         if(string == null || string == ""){ //null handling added
-            return string;
+            output = "";
+            return output;
         }
         for (int i = (string.length() - 1); i >= 0; i--) {
             output += (string.charAt(i));
@@ -26,7 +27,8 @@ public class StringFunctions {
     public static final String reverseWithStringBuilder(String string) {
         final StringBuilder builder = new StringBuilder();
         if(string == null || string == ""){
-            return string; //null handling added
+            output = "";
+            return output; //null handling added
         }
         for (int i = (string.length() - 1); i >= 0; i--) {
             builder.append(string.charAt(i));
